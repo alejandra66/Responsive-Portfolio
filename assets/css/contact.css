@@ -56,7 +56,7 @@ html, body {
  .section { 
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 20%;
     margin-right: 20%;
     width: 960px; 
@@ -73,20 +73,19 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
  }
- p {
+.form-group {
+    margin-left: 20px;
+    margin-right: 20px;
     color: #777777;
-    line-height: 1cm;
- }
- #cat {
+}
+.btn-primary {
+    background: #4aaaa5;
+    border-color: #4aaaa5;
     margin-left: 20px;
- }
- .contanier {
-    margin-left: 20px;
-    margin-top: 20px;
- } 
- .contanier2 {
-    margin-left: 20px;
- }
+    margin-bottom: 20px;
+    border-radius: 0px;
+    width: 10%;
+}
  /* main section ends */
  
  .footer {
@@ -106,5 +105,49 @@ html, body {
     background-color: #777777;
     color: white;
     text-align: center;
-     
   }
+  /* This is where attempted to do my media quires, having a hard time understand were I went wrong. 
+ it in like this could you plesase give me feedback on where I went wrong */
+  @media screen and (max-width:980px) {
+   body {
+      background: red;
+   }
+   .wrapper {
+      width: 100%;
+   }
+   .main-logo{
+      width: 100%;
+   }
+   .nav{
+      width: 100%;
+   }
+   .container-fluid{
+      width: 100%;
+   }
+   #main-section {
+      width: 100%;
+   }
+}
+@media screen and (max-width:768px) {
+  body {
+     background: blue;
+  }
+  .main-logo{
+     width: 50%;
+  }
+  .nav{
+     width: 50%;
+  }
+  .row {
+   width: 50%;
+  }
+}   
+  @media screen and (max-width:640px) {
+  body {
+        background: yellowgreen;
+  }
+.warpper { 
+  width: 320px;
+} 
+}
+
